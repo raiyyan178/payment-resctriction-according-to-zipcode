@@ -1,0 +1,24 @@
+/* Style for error message */
+.wc-block-components-notice.dzpr-notice {
+    color: #e2401c;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #e2401c;
+    background-color: #fff5f5;
+    margin-bottom: 20px;
+}
+
+/* Hide payment section if empty or invalid */
+#payment-method:empty,
+#payment-method.hidden,
+.wc-block-checkout__payment-method:empty,
+.wc-block-checkout__payment-method.hidden {
+    display: none !important;
+}
+
+/* Disable place order button */
+.wc-block-components-checkout-place-order-button.disabled,
+button[name="woocommerce_checkout_place_order"].disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
